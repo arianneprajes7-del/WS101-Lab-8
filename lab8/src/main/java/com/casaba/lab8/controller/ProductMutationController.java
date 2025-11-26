@@ -4,11 +4,11 @@ import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ProductMutation implements GraphQLMutationResolver {
+public class ProductMutationController implements GraphQLMutationResolver {
 
     private final ProductService productService;
 
-    public ProductMutation(ProductService productService) {
+    public ProductMutationController(ProductService productService) {
         this.productService = productService;
     }
 

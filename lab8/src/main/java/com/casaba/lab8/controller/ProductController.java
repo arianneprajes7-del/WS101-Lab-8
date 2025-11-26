@@ -5,11 +5,11 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class ProductQuery implements GraphQLQueryResolver {
+public class ProductController implements GraphQLQueryResolver {
 
     private final ProductService productService;
 
-    public ProductQuery(ProductService productService) {
+    public ProductController(ProductService productService) {
         this.productService = productService;
     }
 
